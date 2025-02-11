@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "WorkSans";
+  src: url("../assets/fonts/static/WorkSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url("../assets/fonts/static/WorkSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url("../assets/fonts/static/WorkSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "WorkSans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url("../assets/images/background-pattern-desktop.svg") no-repeat top center/contain, #f9f0ff 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 546px;
+  background-color: #ffffff;
+  padding: 45px 30px 10px 30px;
+  border-radius: 20px;
+}
+.card_headerbox {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+.card_headerbox_title {
+  font-weight: 700;
+  font-size: 48px;
+  color: #2f1533;
+}
+
+.accordion-item {
+  padding: 30px 0 30px;
+  border-bottom: 1px solid #f9f0ff;
+  cursor: pointer;
+}
+.accordion-item_headerbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion-item_headerbox_title {
+  font-weight: 700;
+  color: #2f1533;
+}
+.accordion-item_content {
+  margin-top: 24px;
+  color: #8c6991;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out, margin-top 0.3s ease;
+}
+.accordion-item_content.hidden {
+  opacity: 0;
+  margin-top: 0;
+}
+.accordion-item_content:not(.hidden) {
+  max-height: 200px;
+  opacity: 1;
+}
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 425px) {
+  .card {
+    width: 320px;
+    box-sizing: border-box;
+  }
+  .wrapper {
+    background: url("../assets/images/background-pattern-mobile.svg") no-repeat top center/contain, #f9f0ff 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */
