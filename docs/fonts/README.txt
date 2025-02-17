@@ -1,36 +1,27 @@
-Work Sans Variable Font
-=======================
+Inter Variable Font
+===================
 
-This download contains Work Sans as both variable fonts and static fonts.
+This download contains Inter as both a variable font and static fonts.
 
-Work Sans is a variable font with this axis:
+Inter is a variable font with these axes:
+  slnt
   wght
 
-This means all the styles are contained in these files:
-  WorkSans-VariableFont_wght.ttf
-  WorkSans-Italic-VariableFont_wght.ttf
+This means all the styles are contained in a single file:
+  Inter-VariableFont_slnt,wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Work Sans:
-  static/WorkSans-Thin.ttf
-  static/WorkSans-ExtraLight.ttf
-  static/WorkSans-Light.ttf
-  static/WorkSans-Regular.ttf
-  static/WorkSans-Medium.ttf
-  static/WorkSans-SemiBold.ttf
-  static/WorkSans-Bold.ttf
-  static/WorkSans-ExtraBold.ttf
-  static/WorkSans-Black.ttf
-  static/WorkSans-ThinItalic.ttf
-  static/WorkSans-ExtraLightItalic.ttf
-  static/WorkSans-LightItalic.ttf
-  static/WorkSans-Italic.ttf
-  static/WorkSans-MediumItalic.ttf
-  static/WorkSans-SemiBoldItalic.ttf
-  static/WorkSans-BoldItalic.ttf
-  static/WorkSans-ExtraBoldItalic.ttf
-  static/WorkSans-BlackItalic.ttf
+in those cases you can use the static font files for Inter:
+  static/Inter-Thin.ttf
+  static/Inter-ExtraLight.ttf
+  static/Inter-Light.ttf
+  static/Inter-Regular.ttf
+  static/Inter-Medium.ttf
+  static/Inter-SemiBold.ttf
+  static/Inter-Bold.ttf
+  static/Inter-ExtraBold.ttf
+  static/Inter-Black.ttf
 
 Get started
 -----------
