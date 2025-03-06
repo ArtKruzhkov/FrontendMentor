@@ -24,7 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 productCard.innerHTML = `
                     <div class="product-container_menu-list_product-card_img-container">
-                        <img src="${product.image.desktop}" alt="${product.name}">
+                        <div class="product-container_menu-list_product-card_img-container_img-wrap">
+                            <img src="${product.image.desktop}" alt="${product.name}">
+                        </div>
                         <button class="add-to-cart"><img src="./assets/images/icon-add-to-cart.svg" alt="add-to-cart">Add to Cart</button>
                     </div>
                     <p class="product-container_menu-list_product-card_category">${product.category}</p>
@@ -153,6 +155,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 button.classList.add("active");
 
+                const closestImgContainer = button.closest(".product-container_menu-list_product-card")
+                    .querySelector(".product-container_menu-list_product-card_img-container_img-wrap");
+
+                if (closestImgContainer) {
+                    closestImgContainer.classList.add("active");
+                }
+
                 button.querySelector(".increase").addEventListener("click", (event) => {
                     event.stopPropagation();
                     cartItems[productName].quantity++;
@@ -183,6 +192,13 @@ document.addEventListener("DOMContentLoaded", () => {
             function resetButton(button) {
                 button.innerHTML = `<img src="./assets/images/icon-add-to-cart.svg" alt="add-to-cart"> Add to Cart`;
                 button.classList.remove("active");
+
+                const closestImgContainer = button.closest(".product-container_menu-list_product-card")
+                    .querySelector(".product-container_menu-list_product-card_img-container_img-wrap");
+
+                if (closestImgContainer) {
+                    closestImgContainer.classList.remove("active");
+                }
             }
 
             function updateCartCount() {
